@@ -1,0 +1,120 @@
+
+{
+    "fullName": "Rakesh Reddy",
+    "designation": "Full Stack Developer",
+    "email": "rakeshb1602@gmail.com",
+    "linkedinUrl": "https://www.linkedin.com/in/rakesh-reddy-7902a8248",
+    "githubUrl": "https://github.com/RakeshReddy1602",
+    "instagramUrl": "https://www.instagram.com/rakeshreddy_1542/",
+    "bioDescription": "I am a dedicated Software Engineer with expertise in building efficient and scalable web applications. Currently contributing to the fintech domain at Valuefy Solutions, I specialize in Angular, Node.js, Loopback, and MySQL, developing user-centric features and streamlining critical workflows.\n\nWith a strong focus on performance optimization and code quality, I have a proven track record of enhancing back-end processes, improving overall system performance, and ensuring seamless application functionality. My approach combines technical expertise with a commitment to delivering impactful, high-quality solutions tailored to business needs.",
+    "educatinoDegrees": [
+        {
+            "degreeTitle": "B.Tech (Computer Science and Engineering)",
+            "universityName": "Lovely Professional University",
+            "universityAddress": "Punjab, India",
+            "yearOfGraduation": "2025",
+            "cgpa": "9.0",
+            "summary": "Specialized in Software Development, Data Structures, Algorithms, and Database Management during my B.Tech in Computer Science, with a strong foundation in solving complex technical challenges"
+        },
+        {
+            "degreeTitle": "Diploma (Computer Engineering)",
+            "universityName": "Andhra Polytechnic College",
+            "universityAddress": "Kakinada, India",
+            "yearOfGraduation": "2022",
+            "cgpa": "9.3",
+            "summary": "Graduated with a Diploma in Computer Engineering from Andhra Polytechnic College, building a strong foundation in programming and mastering core concepts of Computer Science and Engineering"
+        }
+        
+    ],
+    "experience": [
+        {
+            "companyName": "Valuefy Solutions",
+            "companyAddress": "Mumbai, India",
+            "role": "Software Engineer Intern",
+            "duration": "Apr 2024 - Present",
+            "achievements": [
+                "Developed innovative features for a fintech platform, improving user experience and business performance.",
+                "Optimized backend processes with Node.js, Loopback, and MySQL, enhancing system efficiency and performance.",
+                "Streamlined critical workflows, reducing production issues and boosting operational efficiency across teams.",
+                "Collaborated in a cross-functional team, delivering high-quality code and ensuring seamless system integration."
+              ]
+              
+        }
+    ],
+      "skills": {
+        "Programming Languages": [
+            { 
+              "name": "JavaScript", 
+              "icon": "/javascript.png", 
+              "description": "Versatile language for front-end and back-end development" 
+            },
+            { 
+              "name": "Java", 
+              "icon": "/java.png", 
+              "description": "Powerful language for data science and backend development" 
+            },
+            { 
+              "name": "C", 
+              "icon": "/c.png", 
+              "description": "Typed superset of JavaScript for enhanced development" 
+            }
+          ],
+          "DataBases": [
+            { 
+              "name": "MySQL",
+              "icon": "/my-sql.png",
+              "description": "Relational database management system"
+            },
+            {
+                "name": "MongoDB",
+                "icon": "/mongo-db.png",
+                "description": "NoSQL database for storing and retrieving data"
+            }
+          ],
+          "Web Technologies": [
+            { 
+              "name": "Angular", 
+              "icon": "/angular.png", 
+              "description": "Progressive JavaScript framework for building UIs" 
+            },
+            { 
+              "name": "Nuxt.js", 
+              "icon": "/nuxt.png", 
+              "description": "Vue.js framework for universal applications" 
+            },
+            { 
+              "name": "Tailwind CSS", 
+              "icon": "/tailwind-css.png", 
+              "description": "Component-based library for building user interfaces" 
+            },
+            {
+                "name": "Loopback",
+                "icon": "/loopback.png",
+                "description": "Node.js framework for building APIs and microservices"
+            },
+            {
+                "name": "Elastic Search",
+                "icon": "/elasticsearch.png",
+                "description": "Full-text search engine for querying and aggregating data"
+            }
+          ],
+          "Developer Tools": [
+            { 
+              "name": "Git",
+              "icon": "/git.png",
+              "description": "Version control and collaboration tool" 
+            },
+            { 
+              "name": "GitHub", 
+              "icon": "/github.png", 
+              "description": "Version control and collaboration platform" 
+            },
+           {
+            "name": "Postman",
+            "icon": "/postman.png",
+            "description": "API development and testing tool"
+           }
+          ]
+      },
+    "projects": []
+}

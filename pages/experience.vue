@@ -1,21 +1,21 @@
 <template>
-  <section class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-16 px-6">
+  <section id="experience" class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-16 px-6">
     <div class="max-w-4xl mx-auto">
       <h2 class="text-4xl font-bold text-white mb-12 text-center">
         Professional Experience
       </h2>
       
       <div 
-        v-for="(exp, index) in experiences" 
+        v-for="(exp, index) in experienceDetails" 
         :key="exp.company"
         class="mb-12 bg-gray-800 bg-opacity-70 rounded-xl p-6 shadow-lg border border-gray-700 transition-all duration-500 ease-in-out"
       >
         <div class="mb-4">
           <h3 class="text-2xl font-bold text-teal-400">
-            {{ exp.company }} - {{ exp.role }}
+            {{ exp.companyName }} - {{ exp.role }}
           </h3>
           <div class="text-gray-400 text-sm">
-            {{ exp.duration }} | {{ exp.location }}
+            {{ exp.duration }} | {{ exp.companyAddress }}
           </div>
         </div>
         
@@ -36,37 +36,12 @@
   </section>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      experiences: [
-        {
-          company: 'TechCorp Innovations',
-          role: 'Frontend Developer',
-          duration: 'Jan 2020 - Dec 2022',
-          location: 'San Francisco, CA',
-          achievements: [
-            'Designed and implemented responsive user interfaces using Vue.js',
-            'Utilized TailwindCSS for efficient and modern styling',
-            'Collaborated with cross-functional teams to enhance user experience',
-            'Optimized application performance through strategic front-end improvements'
-          ]
-        },
-        {
-          company: 'CodeMasters Inc.',
-          role: 'Software Engineer',
-          duration: 'Jan 2023 - Present',
-          location: 'Remote',
-          achievements: [
-            'Developed scalable backend APIs using Node.js',
-            'Integrated backend services with frontend applications',
-            'Implemented Docker containerization for application deployment',
-            'Streamlined CI/CD pipelines to improve development workflow'
-          ]
-        }
-      ]
-    }
-  }
-}
+<script setup>
+import details from '../details/details.json';
+
+const experienceDetails = ref({});
+
+onMounted(() => {
+  experienceDetails.value = details["experience"];
+})
 </script>

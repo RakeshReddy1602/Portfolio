@@ -5,7 +5,7 @@
       <div 
         class="text-3xl font-bold text-white hover:text-cyan-400 transition-colors cursor-pointer"
       >
-        John Doe
+       {{ fullName }}
       </div>
 
       <!-- Mobile Menu Toggle -->
@@ -70,7 +70,9 @@
 
 <script setup>
 import { ref } from 'vue'
+import details from '../details/details.json';
 
+const fullName = ref('');
 const isMobileMenuOpen = ref(false)
 
 const navLinks = [
@@ -81,6 +83,10 @@ const navLinks = [
   { name: 'Projects', href: '/#projects' },
   { name: 'Contact', href: '/#contact' }
 ]
+
+onMounted(() => {
+  fullName.value = details["fullName"];
+})
 
 const toggleMobileMenu = () => {
   isMobileMenuOpen.value = !isMobileMenuOpen.value

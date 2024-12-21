@@ -9,5 +9,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+
   compatibilityDate: '2024-11-12',
+  modules: ['@nuxt/image'],
 })
