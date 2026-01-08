@@ -1,3 +1,4 @@
+FROM node:lts-alpine as build-stage
 FROM nginx:stable-alpine as production-stage
 
 RUN rm -rf /usr/share/nginx/html/*
