@@ -8,7 +8,7 @@ COPY package.json ./
 COPY package-lock.json ./
 RUN npm install
 COPY . .
-RUN npm run build
+RUN npm run generate
 
 FROM nginx:stable-alpine as production-stage
 COPY --from=build-stage /app/.output/public /usr/share/nginx/html
